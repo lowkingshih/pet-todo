@@ -21,17 +21,17 @@ type Props = {}
 
 const INITIAL_TODO_LIST: Todo[] = [
     {
-        id: 1,
+        id: v4(),
         description: '吃飯',
         isDone: false
     },
     {
-        id: 2,
+        id: v4(),
         description: '睡覺',
         isDone: false
     },
     {
-        id: 3,
+        id: v4(),
         description: '打東東',
         isDone: false
     }
@@ -93,7 +93,7 @@ const Todo = () => {
                 }}
             >
                 {
-                    state.todoList.map<Todo>((todo, index) => (
+                    state.todoList.map((todo, index) => (
                         <Item 
                             key={todo.id}
                             id={todo.id}
