@@ -3,9 +3,7 @@ import Todo from './_components/todo';
 
 const TodoPage = () => {
   return (
-    <>
-        <Todo />
-    </>
+      <Todo />
   )
 }
 

@@ -73,12 +73,14 @@ const Todo = () => {
 
     return (
         <Container 
+            id="www"
             sx={{
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
-                height: '100vh'
+                height: '100vh',
             }}
+            maxWidth="sm"
         >
             <Typography variant="h2" textAlign='center'>
                 待辦清單
@@ -88,7 +90,7 @@ const Todo = () => {
             />
             <Stack 
                 sx={{
-                    width: '500px',
+                    width: '100%',
                     padding: 2
                 }}
             >
